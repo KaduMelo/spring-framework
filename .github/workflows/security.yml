@@ -1,0 +1,12 @@
+name: Project Security Audit
+
+on:
+  push:
+    branches:
+      - main        # ou a branch que você quer monitorar
+      - 'release/*' # opcional, para branches de release
+
+jobs:
+  audit:
+    uses: org/actions-security-audit/.github/workflows/audit.yml@v1
+    secrets: inherit
