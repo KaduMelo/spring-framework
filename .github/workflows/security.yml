@@ -8,5 +8,5 @@ on:
 
 jobs:
   audit:
-    uses: org/actions-security-audit/.github/workflows/audit.yml@v1
+    uses: KaduMelo/dependency-auditor/.github/workflows/audit.yml@v1
     secrets: inherit
